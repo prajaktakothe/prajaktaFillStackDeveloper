@@ -1,13 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title></title>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        table {
+            height: 100vh;
+            width: 100vw;
+            border-style: solid;
+            border-collapse: collapse;
+
+        }
+
+        tr {
+            border-style: solid;
+            border-collapse: collapse;
+
+        }
+
+        th {
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        .one {
+            height: 10%;
+            width: 100%;
+            background-color: skyblue;
+            font-size: 25px;
+        }
+
+        .two {
+            width: 100%;
+            height: 600px;
+            background-color:wheat;
+            font-size: 33px;
+
+        }
+
+        .three {
+            width: 100%;
+            height: 600px;
+            background-color: palegoldenrod;
+            font-size: 33px;
+
+        }
+
+        .four {
+            background-color: palevioletred;
+            height: 10%;
+            width: 100%;
+            font-size: 25px;
+
+        }
+
+        .name {
+            color: gray;
+            font-size: 32px;
+        }
+
+        p:hover {
+            color: rgb(227, 11, 47);
+        }
+
+        #profession {
+            color: rgb(223, 118, 155);
+        }
+
+        .five {
+            background-color:palegreen;
+            width: 100%;
+            height: 600px;
+        }
+
+        #table {
+            height: 80%;
+            width: 70%;
+            border-style: solid;
+            margin-left: 175px;
+        }
+
+        .section-one {
+            border-style: solid;
+        }
+
+        .section-two {
+            border-style: solid;
+        }
+    </style>
+
 </head>
-<body>
-    <a href="./boostrap-home-page.html">boostrap</a>
-    <a href="./bootstrap.html">boostrap</a>
-    <a href="./first_boostrap.html">boostrap</a>
+
+<body style="margin: 0px;">
+    <table>
+        <tr class=" one">
+            <th> HOME</th>
+            <th> <a href="#ABOUT"> ABOUT</a></th>
+            <th> <a href="#PROJECT">PROJECT</a></th>
+            <th> <a href="#EDUCATION">EDUCATION</a></th>
+
+        </tr>
+        <tr class="two" id="ABOUT">
+            <td colspan="4">
+                <img src="/Users/enjoy_06_e/Downloads/img06.jpg" alt="" height="300px" width="300px"
+                    style="border-radius: 50%; float:right; margin-right: 20%;">
+                <p>My Name is <span class="name">Prajakta Kothe</span> </p>
+                <p>I am a <span id="profession">Student of 1st year MBA</span></p>
+                <p>My Collage Name is Dr. Ambedkar Institute of Management Studies & Research,Nagpur</p>
+                <a href="resume.html">Resume</a>
+
+
+            </td>
+            <td></td>
+
+        </tr>
+        <tr class="five" id="PROJECT">
+            <td colspan="4">
+                <table id="table">
+                    <tr>
+                        <td>
+                            <a href="first.html">
+                                <h1> First Project</h1>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="movies.html">
+                                <h1>Second Project</h1>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="table.html">
+                                <h1>Third Project</h1>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="newtable.html">
+                                <h1>Fourth Project</h1>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="layoutone.html">
+                                <h1>Fifth Project</h1>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="layouttwo.html">
+                                <h1>Sixth Project</h1>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="layoutthree.html">
+                                <h1>Seventh Project</h1>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="flexone.html">
+                                <h1>Eightth Project</h1>
+                            </a>
+                        </td>
+                        <td><a href="chess.html">
+                            <h1>Nineth Project</h1>
+                        </a></td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr class="three" id="EDUCATION">
+            <td colspan="4">
+                <p>Bachelor Degree: Bcom (Bachelor of commerce)(2020-23)</span></p>
+                <p>Collage Name: Nabira Mahavidyalaya,Katol</p>
+                <p>Masters Degree: MBA (Masters of business administration)(pursuing) </p>
+                <p>Collage Name:Dr. Ambedkar Institute of Management Studiesm & Research</p>
+            </td>
+
+
+        </tr>
+        <tr class="four">
+            <th><a href="https://web.skype.com/">Skype ID:</a></th>
+            <th> <a href="https://mail.google.com/mail/u/0/#inbox">Email</a></th>
+            <th><a href="https://github.com/">Github ID </a></th>
+            <th>Stack overflow</th>
+        </tr>
+
+    </table>
+
 </body>
+
 </html>
