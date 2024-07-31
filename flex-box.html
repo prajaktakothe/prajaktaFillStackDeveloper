@@ -18,11 +18,11 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            background-color: yellow;
+            background-color: wheat;
         }
 
         .container-one-child {
-            background-color: aqua;
+
             border-style: solid;
 
             height: 70%;
@@ -33,56 +33,26 @@
 
         /* container two */
         .container-two {
-            height: 100vh;
+            height: 70%;
             width: 100vw;
-
-            background-color: orchid;
-        }
-
-
-
-        .box {
-            background-color: yellow;
             display: flex;
             flex-direction: row;
+            
         }
-
-        .box-one {
-            color: brown;
-
-            border-style: solid;
-            border-width: 5px;
-            height: 20%;
-            width: 10%;
-            display: flex;
-        }
-
         .inner-box-one {
             width: 50vw;
-            height: 60vh;
-            background-color: yellowgreen;
-            border: 1px black solid;
+            height: 100%;
+            background-color: palevioletred
+            ;
+            display: flex;
+            flex-direction: row;
+            border: solid;
         }
 
         .inner-box-two {
             width: 50vw;
-            height: 60vh;
-            background-color: yellowgreen;
-            border: 1px black solid;
-        }
-
-        .section-one {
-            background-color: rebeccapurple;
-            border-style: solid;
-
-            height: 15%;
-            width: 40%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .inner-box-two {
+            height: 100%;
+            background-color:palevioletred ;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -90,22 +60,19 @@
             gap: 10px;
 
             flex-direction: row;
-
         }
 
-        .section-two {
-            color: brown;
+        .section {
+
             border-style: solid;
-            border-width: 5px;
-            height: 20%;
-            width: 70%;
-            display: flex;
-            justify-content: center;
-        }
 
-        .main-container {
+            height: 25%;
+            width: 40%;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
         }
 
         /* container three */
@@ -114,7 +81,7 @@
             width: 100vw;
             display: flex;
             flex-direction: row;
-            background-color: rgb(115, 134, 75);
+            background-color:palegreen;
         }
     </style>
 
@@ -125,24 +92,24 @@
     <div class="container-one">
         <div class="container-one-child"></div>
         <div class="container-one-child"></div>
-        <div class="container-one-child"></div> 
+        <div class="container-one-child"></div>
         <div class="container-one-child"></div>
     </div>
     <!-- second container -->
     <div class="container-two">
-        <div class="main-container">
-            <div class="inner-box-one">
-                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202404/virat-kohli-061308633-16x9_0.jpg?VersionId=wwIZTrh1vnpjFczjwAJCROXi7evBNuNo&size=690:388"
-                    alt="virat kohli" style="height: 400px; width: 800px;">
-            </div>
-            <div class="inner-box-two">
-                <div class="section-one"></div>
-                <div class="section-one"></div>
-                <div class="section-one"></div>
-                <div class="section-one"></div>
-                <div class="section-one"></div>
-                <div class="section-one"></div>
-            </div>
+        <div class="inner-box-one">
+            <img src="https://th.bing.com/th/id/R.661aa707f9bfd1560b007c454e47baa2?rik=i9ZDuKrhqwpJPw&riu=http%3a%2f%2fwww.letuspublish.com%2fwp-content%2fuploads%2f2017%2f04%2fVirat-Kohli-wallpaper.jpg&ehk=OK%2bj%2fC3kB%2bC9VYxLF096xJVBqlOFXWgpEsE7ynIIESY%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+
+        </div>
+        <div class="inner-box-two">
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+
         </div>
     </div>
     <!-- third container -->
