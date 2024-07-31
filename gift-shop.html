@@ -12,43 +12,28 @@
 </head>
 
 <body style="background-image: url(https://i.pinimg.com/originals/bd/9b/4e/bd9b4e222885a996ed309a4a50eb1fd8.gif);">
-    <!-- nav-bar start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">KRISHNA STATIONERY & GIFT CENTER</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            
-                        </a>
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true"></a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-    <!-- nav-bar end -->
+    <!-- header start -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">SHREE KRISHNA GIFTS CENTER</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#home" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Address</a></li>
+          
+        </ul>
+      </header>
+
+    <!-- header end -->
     
 
     <main>
         <!-- headings -->
 
-        <section class="py-5 text-center container">
+        <section class="py-5 text-center container" id="home">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Gifts</h1>
@@ -65,7 +50,7 @@
         </section>
         <!-- first row -->
 
-        <div class="album py-5 bg-body-tertiary">
+        <div class="album py-5 bg-body-tertiary" id="products">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
