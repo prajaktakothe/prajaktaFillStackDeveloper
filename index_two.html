@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        /* main container */
+        body {
+
+            height: 200vh;
+            width: 100vw;
+
+        }
+
+        /* container one */
+        .container-one {
+            display: flex;
+            flex-direction: row;
+            height: 2.5%;
+            width: 100vw;
+        }
+
+        .inner-container-one {
+            display: flex;
+            background-color: grey;
+            height: 100%;
+            width: 25%;
+            border: solid;
+        }
+
+        /* container two */
+        .container-two {
+            display: flex;
+            flex-direction: column;
+            height: 30.5%;
+            width: 100%;
+            border: solid;
+            background-image: url();
+            background-repeat: no-repeat; height: 100%; width: 100%;
+
+        }
+
+        /* container three */
+        .container-three {
+            display: flex;
+            flex-direction: column;
+            height: 30.5%;
+            width: 100%;
+            border: solid;
+            background-color: pink;
+        }
+
+        /* container four */
+        .container-four {
+            display: flex;
+            flex-direction: column;
+            height: 30.5%;
+            width: 100%;
+            border: solid;
+            background-color: skyblue;
+        }
+
+        /* container five */
+        .container-five {
+            display: flex;
+            flex-direction: row;
+            height: 2.5%;
+            width: 100%;
+            background-color: plum;
+        }
+
+        .inner-box-one {
+            display: flex;
+
+            height: 100%;
+            width: 25%;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- container-one -->
+    <div class="container-one">
+        <div class="inner-container-one"><a href="#about">About</a></div>
+        <div class="inner-container-one"><a href="#project">Project</a></div>
+        <div class="inner-container-one"><a href="#education">Education</a></div>
+        <div class="inner-container-one"><a href="#contact">Contact</a></div>
+    </div>
+
+    <!-- container-two -->
+    <div class="container-two" id="about"></div>
+    <!-- container-three -->
+    <div class="container-three" id="project"></div>
+    <!-- container-four -->
+    <div class="container-four" id="education"></div>
+    <!-- container-five -->
+    <div class="container-five" id="contact">
+        <div class="inner-box-one">Skype ID</div>
+        <div class="inner-box-one">Email</div>
+        <div class="inner-box-one">Github</div>
+        <div class="inner-box-one">Stack overflow</div>
+    </div>
+
+
+</body>
+
+</html>
