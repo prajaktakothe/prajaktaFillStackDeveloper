@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT ONE</title>
+    <!-- style -->
+    <style>
+        table {
+            height: 50vh;
+            width: 50vw;
+            border-style: solid;
+            border-collapse: collapse;
+            
+        }
+
+        tr {
+            border-collapse: collapse;
+            border-style: solid;
+        }
+
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+        }
+
+        td {
+            border-collapse: collapse;
+            border-style: solid;
+        }
+
+        .heading {
+            color: red;
+        }
+
+        .tableheading {
+            background-color: #f6f686;
+        }
+
+        .firstcol {
+            background-color: aqua;
+        }
+
+        .secondcol {
+            background-color: lightsalmon;
+        }
+        .thirdcol{
+            background-color: pink;
+        }
+        .fourthcol{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <br>
+        <caption class="heading" style="font-size: 200%;">Marksheet</caption>
+
+
+        <tr>
+            <th rowspan="2" class="tableheading">Subject</th>
+            <th colspan="2" class="tableheading">Total Marks</th>
+            <th colspan="2" class=tableheading>Passing Marks</th>
+            <th colspan="2" class="tableheading">Marks Obtained</th>
+            <th rowspan="2" class=tableheading>Total Obtained</th>
+            <th rowspan="2" class="tableheading">Grade</th>
+        </tr>
+        <tr>
+
+            <td class="tableheading">Theory</td>
+            <td class="tableheading">Internal</td>
+            <td class="tableheading">Theory</td>
+            <td class="tableheading">Internal</td>
+            <td class="tableheading">Theory</td>
+            <td class="tableheading">Internal</td>
+        </tr>
+        <tr>
+            <td>Taxation</td>
+            <td class="firstcol">75</td>
+            <td class="firstcol">25</td>
+            <td class="secondcol">25</td>
+            <td class="secondcol">10</td>
+            <td class="thirdcol">24</td>
+            <td class="thirdcol">10</td>
+            <td class="fourthcol">34</td>
+            <td class="fourthcol">F</td>
+        </tr>
+        <tr>
+            <td>International Business</td>
+            <td class="firstcol">75</td>
+            <td class="firstcol">25</td>
+            <td class="secondcol">25</td>
+            <td class="secondcol">10</td>
+            <td class="thirdcol">32</td>
+            <td class="thirdcol">09</td>
+            <td class="fourthcol">41</td>
+            <td class="fourthcol">E</td>
+
+        </tr>
+        <tr>
+            <td>Business Economics</td>
+            <td class="firstcol">75</td>
+            <td class="firstcol">25</td>
+            <td class="secondcol">25</td>
+            <td class="secondcol">10</td>
+            <td class="thirdcol">28</td>
+            <td class="thirdcol">09</td>
+            <td class="fourthcol">37</td>
+            <td class="fourthcol">E</td>
+        </tr>
+        <tr>
+            <td>Business Communication</td>
+            <td class="firstcol">100</td>
+            <td class="firstcol"></td>
+            <td class="secondcol">35</td>
+            <td class="secondcol"></td>
+
+            <td class="thirdcol">36</td>
+            <td class="thirdcol"></td>
+            <td class="fourthcol">36</td>
+            <td class="fourthcol">E</td>
+
+
+        </tr>
+        <tr>
+            <td>Environmental Studies</td>
+            <td class="firstcol">100</td>
+            <td class="firstcol"></td>
+            <td class="secondcol">35</td>
+            <td class="secondcol"></td>
+            <td class="thirdcol">34</td>
+            <td class="thirdcol"></td>
+            <td class="fourthcol">34</td>
+            <td class="fourthcol">F</td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>

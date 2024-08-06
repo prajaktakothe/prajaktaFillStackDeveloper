@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title></title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* container one css */
+        .container-one {
+            height: 15%;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: wheat;
+        }
+
+        .container-one-child {
+
+            border-style: solid;
+
+            height: 70%;
+            width: 10%;
+            display: flex;
+
+        }
+
+        /* container two */
+        .container-two {
+            height: 70%;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .inner-box-one {
+            width: 50vw;
+            height: 100%;
+            background-color: palevioletred;
+            display: flex;
+            flex-direction: row;
+            border: solid;
+        }
+
+        .inner-box-two {
+            width: 50vw;
+            height: 100%;
+            background-color: palevioletred;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-style: solid;
+            gap: 10px;
+
+            flex-direction: row;
+        }
+
+        .section {
+
+            border-style: solid;
+
+            height: 25%;
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* container three */
+        .container-three {
+            height: 15%;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            background-color: palegreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- first container -->
+    <div class="container-one">
+        <div class="container-one-child"></div>
+        <div class="container-one-child"></div>
+        <div class="container-one-child"></div>
+        <div class="container-one-child"></div>
+    </div>
+    <!-- second container -->
+    <div class="container-two">
+        <div class="inner-box-one">
+            <img src="https://th.bing.com/th/id/R.661aa707f9bfd1560b007c454e47baa2?rik=i9ZDuKrhqwpJPw&riu=http%3a%2f%2fwww.letuspublish.com%2fwp-content%2fuploads%2f2017%2f04%2fVirat-Kohli-wallpaper.jpg&ehk=OK%2bj%2fC3kB%2bC9VYxLF096xJVBqlOFXWgpEsE7ynIIESY%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+
+        </div>
+        <div class="inner-box-two">
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+
+        </div>
+    </div>
+    <!-- third container -->
+    <div class="container-three"></div>
+</body>
+
+</html>

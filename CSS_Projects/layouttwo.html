@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<head>
+   <style>
+     
+    table{
+        height: 100vh;
+        width: 100vw;
+        border-style: solid;
+       border-collapse: collapse; 
+    }
+    .top{
+        background-color: aqua;
+    }
+    .second{
+        background-color: blueviolet;
+    }
+    .third{
+        background-color: blue;
+    }
+    .bottom{
+        background-color: green;
+    }
+    tr{
+        border-style: solid;
+        border-collapse: collapse;
+    }
+    td{
+        border-style: solid;
+        border-collapse: collapse;
+    }
+   </style>
+
+</head>
+
+<body margin="0px">
+    <table>
+        <!-- 1st row -->
+        <tr class="top">
+            <td colspan="4"></td>
+        </tr>
+        <!-- 2nd row -->
+        <tr class="second">
+            <td colspan="2"></td>
+            <td rowspan="3" style="background-color: gray;"></td>
+        </tr>
+        <!-- 3rd row -->
+        <tr class="third">
+            <td colspan="2"></td>
+            
+        </tr>
+        <!-- 4th row -->
+        <tr class="bottom">
+            <td colspan="2"></td>
+            
+        </tr>
+    </table>
+
+</body>
+
+</html>
