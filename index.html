@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html>
-<title></title>
 
 <head>
+    <title></title>
     <style>
-        table {
-            height: 100vh;
+        /* main container */
+        body {
+
+            height: 400vh;
             width: 100vw;
+            margin: 0%;
+            border: solid;
+            background-image: url(https://th.bing.com/th/id/OIP.b4skt0HgKXGIWjzMvI5yXgHaGq?rs=1&pid=ImgDetMain);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        p:hover {
+            color: rgb(227, 11, 47);
+        }
+
+        h1:hover {
+            color: rgb(227, 11, 47);
+        }
+
+        h2:hover {
+            color: rgb(227, 11, 47);
+        }
+
+
+        /* container one */
+        .container-one {
+            display: flex;
+            flex-direction: row;
+
+            height: 5%;
+            width: 100%;
+            margin-right: 40px;
+            margin-top: 30px;
+        }
+
+        .inner-container-one {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 10%;
+            margin-right: 40px;
+            font-size: 20px;
+        }
+
+        /* container two */
+        .container-two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 25%;
+            width: 100%;
+            margin-left: 40px;
+
+
+
+        }
+
+        /* container three */
+        .container-three {
+            display: flex;
+            flex-direction: column;
+            height: 35%;
+            width: 100%;
+
+
+        }
+
+        #table {
+            height: 70%;
+            width: 70%;
             border-style: solid;
             border-collapse: collapse;
-
+            margin-left: 175px;
         }
 
         tr {
@@ -18,245 +112,246 @@
 
         }
 
-        th {
-            border-style: solid;
-            border-collapse: collapse;
-        }
+
 
         td {
             border-style: solid;
             border-collapse: collapse;
         }
 
-        .one {
-            height: 10%;
+
+
+        /* container four */
+        .container-four {
+            display: flex;
+            flex-direction: column;
+            height: 20%;
             width: 100%;
-            background-color: skyblue;
-            font-size: 25px;
-        }
-
-        .two {
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+            height: 25%;
             width: 100%;
-            height: 600px;
-            background-color: wheat;
-            font-size: 33px;
+            margin-left: 40px;
 
         }
 
-        .three {
+        /* container five */
+        .container-five {
+            display: flex;
+            flex-direction: row;
+            height: 3%;
             width: 100%;
-            height: 600px;
-            background-color: palegoldenrod;
-            font-size: 33px;
-
+            justify-content: center;
         }
 
-        .four {
-            background-color: palevioletred;
-            height: 10%;
-            width: 100%;
-            font-size: 25px;
-
-        }
-
-        .name {
-            color: gray;
-            font-size: 32px;
-        }
-
-        p:hover {
-            color: rgb(227, 11, 47);
-        }
-
-        #profession {
-            color: rgb(223, 118, 155);
-        }
-
-        .five {
-            background-color: palegreen;
-            width: 100%;
-            height: 600px;
-        }
+        .inner-box-one {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 25%;
+            text-align: center;
+            font-size: 20px;
 
 
-        #table {
-            height: 80%;
-            width: 70%;
-            border-style: solid;
-            margin-left: 175px;
-        }
-
-        .section-one {
-            border-style: solid;
-        }
-
-        .section-two {
-            border-style: solid;
         }
     </style>
-
 </head>
 
-<body style="margin: 0px;">
-    <table>
-        <!-- row-one -->
-        <tr class=" one">
-            <th> HOME</th>
-            <th> <a href="#ABOUT"> ABOUT</a></th>
-            <th> <a href="#PROJECT">PROJECT</a></th>
-            <th> <a href="#EDUCATION">EDUCATION</a></th>
+<body style="border: solid;">
 
-        </tr>
-        <!-- row-two -->
-        <tr class="two" id="ABOUT">
-            <td colspan="4">
-                <img src="/Users/enjoy_06_e/Downloads/img06.jpg" alt="" height="400px" width="400px"
-                    style="border-radius: 50%; float:right; margin-right: 20%;">
-                <p>My Name is <span class="name">Prajakta Kothe</span> </p>
-                <p>I am a <span id="profession">Student of 1st year MBA</span></p>
-                <p>My Collage Name is Dr. Ambedkar Institute of Management Studies & Research,Nagpur</p>
-                <a href="resume.html">Resume</a>
+    <!-- container-one -->
+    <div class="container-one">
+        <div class="inner-container-one"><a href="#about">About</a></div>
+        <div class="inner-container-one"><a href="#project">Project</a></div>
+        <div class="inner-container-one"><a href="#education">Education</a></div>
+        <div class="inner-container-one"><a href="#contact">Contact</a></div>
+    </div>
+
+    <!-- container-two -->
+    <div class="container-two" id="about">
+        <h1>Welcome to my Webpage!</h1>
+        <p style="font-size: 25px;">Hello</p>
+        <h2>I am Prajakta Kothe</h2>
+        <p style="font-size: 20px;">For more details, here is my resume</p>
+        <button style="border-radius: 25%; height: 50px;width: 100px; background-color: wheat;"><a
+                style="text-decoration: none;color: black;" href="./PROJECTS/HTML_Projects/resume.html">Resume
+            </a></button>
+
+    </div>
+    <hr>
+    <!-- container-three -->
+    <div class="container-three" id="project">
+        <table id="table">
+            <!-- section one -->
+            <tr>
+                <td>
+                    <a href="./PROJECTS/HTML_Projects/cricketers.html">
+                        <h2> Cricketers Project</h2>
+                        <img src="https://i.pinimg.com/736x/2a/27/8d/2a278d9e9068159b42c05a366cc16271.jpg" alt=""
+                            height="200px" width="200px">
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/HTML_Projects/movies.html">
+                        <h2>Movies Project</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbJQ437m6CEOBgzHT7L2QcP6YVoh9MP6SVA&s"
+                            alt="" height="200px" width="200px">
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/HTML_Projects/table.html">
+                        <h2>Table Project-1</h2>
+                        <img src="https://www.freecodecamp.org/news/content/images/2021/09/uide-to-writting-a-good-readme-file--7-.png"
+                            alt="" height="200px" width="200px">
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/HTML_Projects/newtable.html">
+                        <h2>Table Project-2</h2>
+                        <img src="https://www.freecodecamp.org/news/content/images/2021/09/uide-to-writting-a-good-readme-file--7-.png"
+                            alt="" height="200px" width="200px">
+                    </a>
+                </td>
+            </tr>
+            <!-- section two -->
+            <tr>
+
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/layoutone.html">
+                        <h2>Layout Project-01</h2>
+                        <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt="" height="200px"
+                            width="200px">
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/layouttwo.html">
+                        <h2>Layout Project-02</h2>
+                        <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt="" height="200px"
+                            width="200px">
+
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/layoutthree.html">
+                        <h2>Layout Project-03</h2>
+                        <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt="" height="200px"
+                            width="200px">
+
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/flex-box.html">
+                        <h2>Flex Project</h2>
+                        <img src="https://miro.medium.com/v2/resize:fit:1140/1*HGXoBi1rjUFrv7LBtynokQ.jpeg" alt=""
+                            height="200px" width="200px">
+                    </a>
+                </td>
+            </tr>
+            <!-- section three -->
+            <tr>
+
+                <td><a href="./PROJECTS/CSS_Projects/chess.html">
+                        <h2>Chess Project</h2>
+                        <img src="https://chessily.com/wp-content/uploads/2022/05/chess-opening-optimal-development.png"
+                            alt="" height="200px" width="200px">
+
+                    </a>
+                </td>
+                <td><a href="./PROJECTS/BOOTSTRAP_Projects/gift-shop .html">
+                        <h2>Boostrap Project</h2>
+                        <img src="https://toppng.com/uploads/preview/bootstrap-featured-image-bootstrap-3-logo-11563293130teouf93qpu.png"
+                            alt="" height="200px" width="200px">
+
+                    </a>
+                </td>
+                <td><a href="./PROJECTS/BOOTSTRAP_Projects/boostrap_index.html">
+                        <h2>Index(Boostrap)</h2>
+                        <img src="https://toppng.com/uploads/preview/bootstrap-featured-image-bootstrap-3-logo-11563293130teouf93qpu.png"
+                            alt="" height="200px" width="200px">
+
+                    </a>
+                </td>
+                <td><a href="./PROJECTS/BOOTSTRAP_Projects/buy .html">
+                        <h2>Billing Page(Boostrap)</h2>
+                        <img src="https://toppng.com/uploads/preview/bootstrap-featured-image-bootstrap-3-logo-11563293130teouf93qpu.png"
+                            alt="" height="200px" width="200px">
+
+                    </a>
+                </td>
+            </tr>
+            <!-- fourth section -->
+            <tr>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/box.html">
+                        <h2>Box Project</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_u51UzjFs-5dHjzLlZJEeujpy3dMGVCWRZg&s" alt="" height="200px"
+                            width="200px">
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/flexone.html">
+                        <h2>Flex Project-02</h2>
+                        <img src="https://miro.medium.com/v2/resize:fit:1140/1*HGXoBi1rjUFrv7LBtynokQ.jpeg" alt="" height="200px"
+                            width="200px">
+
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/float.html">
+                        <h2>Float Project</h2>
+                        <img src="https://blog.openreplay.com/images/working-with-css-float-and-clear-properties/images/hero.png"
+                            alt="" height="200px" width="200px">
+
+                    </a>
+                </td>
+                <td>
+                    <a href="./PROJECTS/CSS_Projects/youtube.html">
+                        <h2>Youtube-Page Project</h2>
+                        <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/original/youtube-logo-youtube-icon-transparent-free-png.png"
+                            alt="" height="200px" width="200px">
+                    </a>
+                </td>
+            </tr>
+
+        </table>
 
 
-            </td>
-            <td></td>
-
-        </tr>
-        <!-- row-three -->
-        <tr class="five" id="PROJECT">
-            <td colspan="4">
-                <table id="table">
-                    <!-- section one -->
-                    <tr>
-                        <td>
-                            <a href="cricketers.html">
-                                <h1> Cricketers Project</h1>
-                                <img src="https://i.pinimg.com/736x/2a/27/8d/2a278d9e9068159b42c05a366cc16271.jpg"
-                                    alt="" height="200px" width="200px">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="movies.html">
-                                <h1>Movies Project</h1>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbJQ437m6CEOBgzHT7L2QcP6YVoh9MP6SVA&s"
-                                    alt="" height="200px" width="200px">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="table.html">
-                                <h1>Table Project-1</h1>
-                                <img src="https://www.freecodecamp.org/news/content/images/2021/09/uide-to-writting-a-good-readme-file--7-.png"
-                                    alt="" height="200px" width="200px">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="newtable.html">
-                                <h1>Table Project-2</h1>
-                                <img src="https://www.freecodecamp.org/news/content/images/2021/09/uide-to-writting-a-good-readme-file--7-.png"
-                                    alt="" height="200px" width="200px">
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- section two -->
-                    <tr>
-
-                        <td>
-                            <a href="layoutone.html">
-                                <h1>Layout Project-01</h1>
-                                <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt=""
-                                    height="200px" width="200px">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="layouttwo.html">
-                                <h1>Layout Project-02</h1>
-                                <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt=""
-                                    height="200px" width="200px">
-
-                            </a>
-                        </td>
-                        <td>
-                            <a href="layoutthree.html">
-                                <h1>Layout Project-03</h1>
-                                <img src="https://www.worldlabel.com/sites/default/files/wl-162_0.jpg" alt=""
-                                    height="200px" width="200px">
-
-                            </a>
-                        </td>
-                        <td>
-                            <a href="flexone.html">
-                                <h1>Flex Project</h1>
-                                <img src="https://th.bing.com/th/id/OIP.W06gnT3sjkoWFjQsolkccgAAAA?rs=1&pid=ImgDetMain"
-                                    alt="">
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- section three -->
-                    <tr>
-
-                        <td><a href="chess.html">
-                                <h1>Chess Project</h1>
-                                <img src="https://chessily.com/wp-content/uploads/2022/05/chess-opening-optimal-development.png" alt=""
-                                    height="200px" width="200px">
-                                
-                            </a>
-                        </td>
-                        <td><a href="Boostrap-Project/gift-shop.html">
-                                <h1>Boostrap Project</h1>
-                            </a>
-                        </td>
-                        <td><a href="Boostrap-Project/boostrap_index.html">
-                                <h1>Index(Boostrap)</h1>
-                            </a>
-                        </td>
-                        <td><a href="Boostrap-Project/buy.html">
-                                <h1>Billing Page(Boostrap)</h1>
-                            </a>
-                        </td>
-                    </tr>
-
-                </table>
 
 
+    </div>
+    <br>
+    <!-- container-four -->
+    <div class="container-four" id="education">
+        <p>Bachelor Degree: Bcom (Bachelor of commerce)(2020-23)</span></p>
+        <p>Collage Name: Nabira Mahavidyalaya,Katol</p>
+        <p>Masters Degree: MBA (Masters of business administration)(pursuing) </p>
+        <p>Collage Name:Dr. Ambedkar Institute of Management Studiesm & Research</p>
+    </div>
+    <!-- container-five -->
+    <div class="container-five" id="contact">
+        <div class="inner-box-one">
+            <div><img src="https://th.bing.com/th/id/OIP.7tmcRXDqUnqMpBWDfsQ8wgHaHu?w=189&h=197&c=7&r=0&o=5&pid=1.7"
+                    alt="" height="100px" width="100px">
+            </div>
+            <div><a href="https://web.skype.com/">Skype ID:</a></div>
+        </div>
+        <div class="inner-box-one">
+            <div><img src="https://icon-library.com/images/email-icon-black-and-white/email-icon-black-and-white-4.jpg"
+                    alt="" height="100px" width="100px">
+            </div>
+            <div><a href="https://mail.google.com/mail/u/0/#inbox">Email</a></div>
 
+        </div>
+        <div class="inner-box-one">
+            <div><img src="https://pngimg.com/uploads/github/github_PNG47.png" alt="" height="100px" width="100px">
+            </div>
+            <div><a href="https://github.com/prajaktakothe/prajaktaFillStackDeveloper">Github ID </a></div>
 
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </td>
-        </tr>
-        <!-- row-four -->
-        <tr class="three" id="EDUCATION">
-            <td colspan="4">
-                <p>Bachelor Degree: Bcom (Bachelor of commerce)(2020-23)</span></p>
-                <p>Collage Name: Nabira Mahavidyalaya,Katol</p>
-                <p>Masters Degree: MBA (Masters of business administration)(pursuing) </p>
-                <p>Collage Name:Dr. Ambedkar Institute of Management Studiesm & Research</p>
-            </td>
-
-
-        </tr>
-        <!-- row-five -->
-        <tr class="four">
-            <th><a href="https://web.skype.com/">Skype ID:</a></th>
-            <th> <a href="https://mail.google.com/mail/u/0/#inbox">Email</a></th>
-            <th><a href="https://github.com/prajaktakothe/prajaktaFillStackDeveloper">Github ID </a></th>
-            <th>Stack overflow</th>
-        </tr>
-
-    </table>
 
 </body>
 
